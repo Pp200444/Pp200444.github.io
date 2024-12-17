@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 01 - Web Form</title>
+    <style>
+        table {
+            background-color: #f0f0f0; /* สีพื้นหลังตาราง */
+            margin: auto; /* จัดให้อยู่ตรงกลาง */
+            border: 1px solid black;
+        }
+        h1 {
+            text-align: center; /* จัดหัวข้อกลาง */
+        }
+        hr {
+            border: 1px solid black; /* เส้นตรง */
+        }
+    </style>
+</head>
+<body>
+    <!-- หัวข้อ -->
+    <h1>แบบสอบถาม</h1>
+    <hr>
+
+    <!-- ฟอร์ม -->
+    <form>
+        <table>
+            <!-- ชื่อและนามสกุล -->
+            <tr>
+                <td><b>ชื่อ-นามสกุล:</b></td>
+                <td><input type="text" name="fullname"></td>
+            </tr>
+            <tr>
+                <td><b>รหัสนักศึกษา:</b></td>
+                <td><input type="text" name="fullname"></td>
+            </tr>
+            
+            <!-- เพศ -->
+            <tr>
+                <td><b>เพศ:</b></td>
+                <td>
+                    <input type="radio" name="gender" value="male" checked> ชาย
+                    <input type="radio" name="gender" value="female"> หญิง
+                </td>
+            </tr>
+            
+            
+            <!-- สังกัดคณะ -->
+            <tr>
+                <td><b>สังกัดคณะ:</b></td>
+                <td>
+                    <select name="faculty">
+                      <option value="SC">วิทยาศาสตร์</option>
+                      <option value="CS">วิทยาการคอมพิวเตอร์</option>
+                      <option value="EDU">ครุศาสตร์</option>
+                      <option value="BBA">บริหารธุรกิจเเละการจัดการ</option>
+                      <option value="HUSO">มนุษยศาสตร์</option>
+                      <option value="TN">เทคโนโลยีอุตสาหกรรม</option>
+                      <option value="KS">เกษตรศาสตร์</option>
+                      <option value="NU">พยาบาลศาสตร์</option>
+                      <option value="ST">สาธารณสุขศาสตร์</option>
+                      <option value="DC">เเพทย์แผนไทยเเละทางเลือก</option>
+                      <option value="LA">นิติศาสตร์</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <!-- แม่สีที่ชอบ -->
+            <tr>
+                <td><b>แม่สีที่ชอบ:</b></td>
+                <td>
+                    <input type="checkbox" name="color" value="red"> สีแดง
+                    <input type="checkbox" name="color" value="blue"> สีน้ำเงิน
+                    <input type="checkbox" name="color" value="yellow"> สีเหลือง
+                </td>
+            </tr>
+
+            <!-- ผลไม้ที่ชื่นชอบ -->
+            <tr>
+                <td><b>ผลไม้ที่ชื่นชอบ:</b></td>
+                <td>
+                    <input type="checkbox" name="fruit" value="mango"> มะม่วง
+                    <input type="checkbox" name="fruit" value="custars apple"> น้อยหน่า
+                    <input type="checkbox" name="fruit" value="durian"> ทุเรียน
+                    <input type="checkbox" name="fruit" value="longan"> ลำใย
+                    <input type="checkbox" name="fruit" value="foreigner"> ฝรั่ง
+                    <input type="checkbox" name="fruit" value="watermelon"> เเตงโม
+                </td>
+            </tr>
+            <tr>
+                <td><b>อาหารที่ชอบ:</b></td>
+                <td>
+                    <input type="checkbox" name="fruit" value="spicy prawn soup"> ต้มยำกุ้ง
+                    <input type="checkbox" name="fruit" value="Minced Pork Omelette"> ไข่เจียวหมูสับ
+                    <input type="checkbox" name="fruit" value="Chicken Galangal Curry"> เเกงข่าไก่
+                    <input type="checkbox" name="fruit" value="green curry"> เเกงเขียวหวาน
+                    <input type="checkbox" name="fruit" value="Pad Thai"> ผัดไทย
+                    <input type="checkbox" name="fruit" value="Crispy noodles topped with noodles"> ราดหน้าหมี่กรอบ
+                </td>
+            </tr>
+            
+            <!-- ปุ่มส่งฟอร์ม -->
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="ส่งฟอร์ม">
+                </td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>
